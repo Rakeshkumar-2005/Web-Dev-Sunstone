@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table</title>
+</head>
+
+<body>
+  <table border="1">
+
+
+    <tr>
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th colspan="1"></th>
+        <th colspan="2">5</th>
+        <th colspan="2">6</th>
+    </tr>
+
+
+    <tr>
+        <td>monday</td>
+        <td>CP</td>
+        <td>HTML</td>
+        <td>CSS</td>
+        <td rowspan="5"><br>B<br>R<br>E<br>A<br>K</td>
+        <td colspan="2">java</td>
+        <td colspan="2">C++</td>
+        
+    </tr>
+
+
+    <tr>
+      <td>tuesday</td>
+      <td rowspan="3">eng</td>
+      <td colspan="2">web Dev</td>
+      <td>C++</td>
+      <td>HTML</td>
+      <td>CSS</td>
+      <td rowspan="2">OS</td>
+    </tr>
+
+
+    <tr>
+      <td>wednesday</td>
+      <td colspan="2">C++</td>
+      <td colspan="3">Pthon</td>
+    </tr>
+
+
+    <tr>
+      <td>thrusday</td>
+      <td colspan="2">java</td>
+      <td></td>
+      <td>eng</td>
+      <td>cp</td>
+      <td colspan="2">Network</td>
+
+    </tr>
+    <tr>
+      <td>friday</td>
+      <td colspan="3">Data science</td>
+      <td colspan="2">C++</td>
+      <td colspan="2">Python</td>
+    </tr>
+    
+</table>
+  
+</body>
+<style>
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+
+    text-align: center;      /* Horizontal center */
+    vertical-align: middle;  /* Vertical center */
+}
+</style>
+</html>

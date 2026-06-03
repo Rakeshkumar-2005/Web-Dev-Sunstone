@@ -1,0 +1,37 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.container {
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid navy;
+    background-image: url('https://images.pexels.com/photos/20211127/pexels-photo-20211127.jpeg?cs=srgb&dl=pexels-robert-clark-504241532-20211127.jpg&fm=jpg');
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin: 10px 0;
+}

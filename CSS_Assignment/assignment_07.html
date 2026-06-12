@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment </title>
+
+<style>
+    .HERO {
+        width: 1000px;
+        height: 100px;
+        background-color: red;
+        text-align: center;
+        line-height: 100px;
+        margin: 10px;
+
+        animation-name: HERO;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes HERO {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .Buttom {
+        width: 1000px;
+        height: 100px;
+        background-color: aqua;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        margin: 10px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: transform 0.3s ease-in-out,
+    }
+
+    .Buttom:hover {
+        transform: scale(1.1);
+        background-color: red;
+    }
+
+
+    .card{
+      height: 250px;
+      width: 180px;
+      margin-left:300px;
+      border-radius: 15px;
+      transition: transform 0.8s;
+      background-color: pink;
+      text-align: center;
+      margin-top: 50px;
+      
+
+
+    }
+    .card:hover{
+    transform: rotateY(180deg);
+    }
+
+    .ball{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    animation-name: jump;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-top: 50px;
+    margin-left:300px;
+    }
+    @keyframes jump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    80%{
+        transform: translateY(0);
+    }
+}
+    
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="HERO">HERO</div>
+    <div class="Buttom">Animation Button</div>
+    <div class="card">Card</div>
+    <div class="ball">ball</div>
+</body>
+</html>

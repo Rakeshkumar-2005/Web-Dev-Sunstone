@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 400px;
+      height: 400px;
+      background-color: red;
+      animation-name: rakeshkumar;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-delay: 0;
+    }
+    /* @keyframes rakeshkumar{
+      from{
+        transform: translate(0px);
+        opacity: 1;
+
+      }
+      to{
+        transform: translate(1000px);
+        opacity: 0;
+
+      }
+    } */
+     @keyframes rakeshkumar{
+      0%{
+        transform: translate(0px);
+        transform: rotate(180deg);
+
+      }
+      50%{
+        transform: translate(1000px);
+        /* transform: rotate(180deg); */
+
+
+      }
+      100%{
+        transform: translate(0px);
+        transform: rotate(180deg);
+
+      }
+     }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  
+</body>
+</html>

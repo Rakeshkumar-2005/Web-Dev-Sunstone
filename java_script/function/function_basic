@@ -1,0 +1,8 @@
+// function defination 
+function greet(name){
+  // return "hello,"+ name+"!";
+  return 'hello, ${name}!' //tempelate literal
+}
+
+let message = greet("Ankit");
+console.log(message);

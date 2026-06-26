@@ -13,4 +13,4 @@ let dance = function(){
 };
 
 dance();
-console.log(dance)
+console.log(dance);

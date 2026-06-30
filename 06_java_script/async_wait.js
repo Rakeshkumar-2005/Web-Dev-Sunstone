@@ -52,41 +52,65 @@
 // handlepromise();
 
 
-function orderPlaced() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("order placed");
-      resolve();
-    }, 2000);
-  });
+// function orderPlaced() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log("order placed");
+//       resolve();
+//     }, 2000);
+//   });
+// }
+
+// function foodPrepared() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log("food prepared");
+//       resolve();
+//     }, 2000);
+//   });
+// }
+
+// function foodDelivered() {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log("food delivered");
+//       resolve();
+//     }, 1000);
+//   });
+// }
+
+// async function processOrder() {
+//   await orderPlaced();
+//   await foodPrepared();
+//   await foodDelivered();
+
+//   console.log("enjoy your food");
+// }
+
+// processOrder();
+
+
+function maggielana(cb){
+  console.log("maggie lene gye...");
+  setTimeout(() =>{
+    console.log("magie aaa.. gya");
+    cb(maggiekhana);  // maggie khana bheje as a function
+  },2000); // representing it take  2 sec to get maggie fromm shop
 }
 
-function foodPrepared() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("food prepared");
-      resolve();
-    }, 2000);
-  });
+function maggiebanana(cb){
+  console.log("maggie banana start");
+  setTimeout(() => {
+    console.log("maggie ban gya..");
+    cb();
+  },2000)
 }
 
-function foodDelivered() {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("food delivered");
-      resolve();
-    }, 1000);
-  });
+
+function maggiekhana(){
+  console.log("maggie khana start");
+  setTimeout(() => {
+    console.log("maggie khana khatam");
+  },2000);
 }
-
-async function processOrder() {
-  await orderPlaced();
-  await foodPrepared();
-  await foodDelivered();
-
-  console.log("enjoy your food");
-}
-
-processOrder();
-
-
+maggielana(maggiebanana);

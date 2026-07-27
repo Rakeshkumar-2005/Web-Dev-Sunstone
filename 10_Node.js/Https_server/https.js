@@ -1,0 +1,13 @@
+const http = require("http");
+const server =  http.createServer((req,res) =>{
+  res.writeHead(200,{"content-type":"text/plain"});
+  res.end("hello from the world js Server");
+});
+
+const PORT = 3000;
+server.listen(PORT,()=>{
+  console.log("Server is running on port ${PORT}...");
+});
+
+// npm init -y
+//npm i express
